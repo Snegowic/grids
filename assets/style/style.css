@@ -31,7 +31,7 @@ header{
 
 .text{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .header__naigation{
@@ -47,17 +47,32 @@ header{
 }
 
 .header__first__figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 60px;
     height: 60px;
     border-radius: 100%;
     background-color: #fff;
 }
 
-.header__secong__figure {
-    width: 120px;
-    height: 60px;
-    background-color: #fff;
-    align-items: end;
+.header__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    background-color: #e37900;
+    border-radius: 5px;
+    font-size: 30px;
+    color: black;
+    border: 2px solid #e37900;
+    transition: .5s;
+}
+
+.header__btn:hover{
+    background-color: black;
+    color: #e37900;
+    transition: .5s;
 }
 
 /* header end */
@@ -88,10 +103,16 @@ header{
     overflow: hidden;
     height: 100%;
     width: 100%;
-
     border: 2px solid black;
     border-radius: 5px;
+    transition: .5s;
 }
+
+.box img:hover{
+    transform: rotate(180deg);
+    transition: .5s;
+}
+
 .block1 {
     grid-area: block1;
 }
